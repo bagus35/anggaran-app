@@ -35,16 +35,16 @@
   </div>
 
   <!-- Navbar -->
-    @include('layout.navbar')
+    @include('admin.layout.navbar')
   <!-- /.navbar -->
   
  <!-- Sidebar Menu -->
-    @include('Layout.sidebar')
+    @include('admin.layout.sidebar')
   <!-- /.sidebar-menu -->
     
 
   <!-- menu conten -->
-    @include('layout.conten')
+    @yield('content')
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
