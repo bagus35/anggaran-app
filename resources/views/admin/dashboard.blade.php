@@ -1,3 +1,7 @@
+@extends('admin.layout.main')
+
+
+@section('content')
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
@@ -85,5 +89,6 @@
         </div>
         <!-- /.row -->
         <!-- Main row -->
+@endsection
         
  

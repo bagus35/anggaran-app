@@ -14,4 +14,10 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', [HomeController::class,'dasboard']);
+Route::get('/admin', function(){
+    return view ('admin.dashboard');
+});
+
+Route::get('/pimpinan', function(){
+    return view ('pimpinan.dashboard');
+});
