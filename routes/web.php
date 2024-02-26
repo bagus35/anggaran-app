@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SasaranController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +21,13 @@ Route::get('/admin', function(){
 
 Route::get('/pimpinan', function(){
     return view ('pimpinan.dashboard');
+});
+
+Route::group(['prefix' => 'sasaran'], function () {
+    Route::get('/', [SasaranController::class, 'sasaran'])->name('admin.sasaran');
+    Route::get('/create', [SasaranController::class, 'sasaranCreate'])->name('admin.sasaran.create');
+    Route::post('/store', [SasaranController::class, 'sasaranStore'])->name('admin.sasaran.store');
+    Route::get('/edit', [SasaranController::class, 'sasaranEdit'])->name('admin.sasaran.edit');
+    Route::patch('/{sasaran}/update', [SasaranController::class, 'sasaranUpdate'])->name('admin.sasaran.update');
+    Route::delete('/{sasaran:id}/destroy', [SasaranController::class, 'sasaranDelete'])->name('admin.sasaran.delete');
 });

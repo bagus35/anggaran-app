@@ -40,12 +40,12 @@
                 </ul>
             </li>
         </ul>
-        <div class="pcoded-navigation-label" data-i18n="nav.category.forms">Forms &amp; Tables</div>
+        <div class="pcoded-navigation-label" data-i18n="nav.category.forms">Data</div>
         <ul class="pcoded-item pcoded-left-item">
             <li>
                 <a href="form-elements-component.html" class="waves-effect waves-dark">
                     <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
-                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">Form Components</span>
+                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">Anggaran Unit</span>
                     <span class="pcoded-mcaret"></span>
                 </a>
             </li>
