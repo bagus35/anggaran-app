@@ -23,6 +23,10 @@ Route::get('/pimpinan', function(){
     return view ('pimpinan.dashboard');
 });
 
+Route::get('/unit', function(){
+    return view ('unit.dashboard');
+});
+
 Route::group(['prefix' => 'sasaran'], function () {
     Route::get('/', [SasaranController::class, 'sasaran'])->name('admin.sasaran');
     Route::get('/create', [SasaranController::class, 'sasaranCreate'])->name('admin.sasaran.create');

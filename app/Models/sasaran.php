@@ -10,4 +10,9 @@ class sasaran extends Model
     use HasFactory;
 
     protected $fillable= ['nama_sasaran'];
+
+    
+    public function IKU(){
+        return $this->hasMany(IKU::class);
+    }
 }
